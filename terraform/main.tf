@@ -15,7 +15,7 @@ provider "docker" {
 resource "docker_image" "java_app_image" {
   name = "test1_app:latest"
   build {
-    context = "../" # Contexto que apunta a la carpeta donde está el Dockerfile
+    path = "../" # Define la ruta al directorio que contiene el Dockerfile
   }
 }
 
