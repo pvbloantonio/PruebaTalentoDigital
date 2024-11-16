@@ -24,6 +24,6 @@ resource "docker_container" "java_app_container" {
   name  = "java_app_container"
   ports {
     internal = 8080
-    external = 8080
+    external = 8082
   }
 }

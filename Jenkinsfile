@@ -47,7 +47,7 @@ pipeline {
                 docker build -t test1_app:latest .
                 docker stop test1_app_container || true
                 docker rm test1_app_container || true
-                docker run -d -p 8080:8080 --name test1_app_container test1_app:latest
+                docker run -d -p 8081:8080 --name test1_app_container test1_app:latest
                 '''
             }
         }
